@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<style>
+    .logo{
+        background-color: #cccccc;
+        width: 800px;
+        height: 75px;
+        color: black;
+    }
+
+    .box1{
+        border: 7px dotted green;
+        margin: 15px;
+        width: 250px;
+        height: 250px;
+        background-color: red;
+        position: relative;
+        z-index: 20;
+    }
+    .box2{
+        border: 7px dotted green;
+        margin: 15px;
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        display: block;
+        z-index: 15;
+    }
+    footer{
+        background-color: #cccccc;
+        width: 800px;
+        height: 75px;
+        color: black;
+        position: relative;
+        top: 110px;
+    }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">HEADER</div>
+    </header>
+    <div class="box1">content1</div>
+    <div class="box2">content2</div>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
