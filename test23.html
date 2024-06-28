@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            max-width: 1000px;
+            max-height: 1000px;
+            text-align: center;
+            color: white;
+            line-height:10vh;
+            margin: 0px auto;
+            padding: 0px auto;
+            font-size: 1.7rem;
+        }
+
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .content{
+            width: 70%;
+            height: 300px;
+            background-color: rgb(116, 82, 33);
+            float: left;
+        }
+        .sidebar{
+            width: 30%;
+            height: 300px;
+            background-color: green;
+            display: inline-block;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+        @media (max-width: 768px) {
+            *{font-size: 1.3rem;}
+            .header{ background-color: rgb(143, 150, 150);}
+            .content{ background-color: rgb(35, 165, 115);}
+            .sidebar{ background-color: rgb(23, 139, 101);}
+            footer{ background-color: rgb(30, 72, 150);}
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">가변 그리드 레이아웃</div>
+    <div class="content">본문</div>
+    <div class="sidebar">사이드바</div>
+
+    <footer>푸터</footer>
+</body>
+</html>
