@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+        @import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+
+        *{
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 auto;
+            font-family: "Jeju Gothic", serif;
+        }
+        .main-box{
+            width: 100%;
+            height: 1900px;
+            border: 1px solid black;
+        }
+        .menu{
+            height: 6vh;
+            line-height: 5vh;
+            background-color: black;
+        }
+        .menu li{
+            width: 10%;
+            display: inline-block;
+            color: white
+        }
+
+        .main-box h1{
+            width: 25%;
+            margin: 30px;
+        }
+        .logoimg{
+            object-fit: cover;
+        }
+
+        .content{
+            /* border: 1px dotted black; */
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .coffee1{
+            width: 100%;
+            max-width: 340px;
+            justify-content: center;
+            align-content: center;
+            flex-grow: 3;
+        }
+        .coffee1-title{
+            justify-content: center;
+            align-content: center;
+            flex-grow: 1;
+            font-weight: bold;
+            margin-bottom: 80px;
+        }
+
+        /* come */
+        .come{
+            background-color: #eee;
+            display: flex;
+            height: 40vh;
+        }
+        .come-content-img{
+            flex-grow: 3;
+            max-width: 340px;
+            margin-top: 30px;
+            justify-content: center;
+            align-content: center;
+        }
+        .come-content-title{
+            font-size: 1.5rem;
+            margin-bottom: 70px;
+            flex-grow: 1;
+            font-weight: bold;
+            justify-content: center;
+            align-content: center;
+        }
+
+        /* ice coffee*/
+        .ice-coffee{
+            width: 100%;
+            flex-direction: row;
+            display: flex;
+            height: 40vh;
+        }
+        .ice-coffee-title{
+            margin-left: 10%;
+            flex-basis: 40%;
+        }
+        .ice-coffee-title li{
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+        .ice-coffee-img{
+            flex-basis: 30%;
+        }
+        /* footer */
+        footer{
+            font-size: 2rem;
+            width: 100%;
+            color: white;
+            font-family: 'Oleo Script', cursive;
+            background-color: black;
+            height: 15vh;
+            line-height: 15vh;
+            text-align: center;
+        }
+    
+    @media (max-width:786px){
+            *{
+                margin: 0px auto;
+                padding: 0px auto;
+            }
+
+            .main-box h1{
+                margin: 25px;
+                width: auto;
+            }
+            .content{
+                border: 1px dotted black;
+                display: inline-block;
+                width: 49%;
+            }
+            .coffee1-title{
+                margin-left: 75px;
+                display: inline-block;
+                width: auto;
+            }
+            .coffee1{
+                visibility: hidden;
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            .come{
+                position: relative;
+                bottom: auto;
+                border: 1px dotted black;
+                display: inline-block;
+                width: 49%;
+            }
+
+            .come-content-img{
+                width: 0px;
+                height: 0px;
+                visibility: hidden;
+                opacity: 10;
+            }
+
+            .come h1{
+                width: auto;
+                height: 1vh;
+                clear: both;
+            }
+
+            .come-content-title{
+                position: relative;
+                top: 15%;
+                margin: 25px;
+                font-size: 1.5rem;
+                margin-top: 0px;
+            }
+        }
+    
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-box">
+        <div class="menu">
+            <ul>
+                <li>카페 소개</li>
+                <li>오시는 길</li>
+                <li>이 달의 추천</li>
+            </ul>
+        </div>
+        <div class="logoimg">
+            <img src="assets/image/header.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1>카페 소개</h1>
+            <div class="coffee1">
+                <img src="assets/image/coffee.jpg" alt="">
+            </div>
+            <div class="coffee1-title" style="font-size: 1.2rem">
+                <p>영업시간 : 오전 9시 ~ 밤 10시</p><br>
+                <p>휴무 : 매주 수요일 (수요일이 공휴일일 경<br><br>우 수요일 영업, 다음날 휴무)</p>
+            </div>
+        </div>
+        <div class="come">
+
+            <h1>오시는 길</h1>
+
+            <div class="come-content-img">
+                <img src="assets/image/map.jpg" alt="">
+            </div>
+
+            <div class="come-content-title">
+                <p>서귀포시 안덕면 사계리 oooo-ooo</p>
+                <p>제주 올레 10코스 산방산 근처</p>
+            </div>
+
+        </div>
+        <div style="width: 100%; height: 5vh; text-align: left;"><h1>이 달의 추천</h1></div>
+        <div class="ice-coffee">
+                <div class="ice-coffee-title"><h2 style="margin: 30px;">핸드드립 아이스커피</h2>
+                <ol>
+                    <li>1인분 기준으로 서버에 각얼음 5조각(한조각의 20cc) 넣고 추출을 시작한다.</li>
+                    <li>평상시 보다 원두의 양은 2배 정도 (20g)와 추출액은 얼음 포함해서 200cc까지 내린다.</li>
+                    <li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다</li>
+                </ol>
+            </div>
+            <div class="ice-coffee-img">
+                <img src="assets/image/ice.jpg" alt="" style="border: 1px sold white; border-radius: 50%;">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>My times with Coffee</p>
+    </footer>
+</body>
+</html>

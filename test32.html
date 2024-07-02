@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0 auto;
+            max-width: 1024px;
+        }
+        body{
+            align-items: center;
+        }
+        .main{
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            line-height: 16vh;
+            background-color: blue;
+            width: 100%;
+            height: 16vh;
+        }
+        .content{
+            background-color: yellowgreen;
+            display: flex;
+            width: 100%;
+            height: 30vh;
+            flex-direction: row;
+            flex-wrap: wrap;
+        } 
+        .main-title{
+            background-color: yellowgreen;
+            flex-grow: 7;
+            height: 30vh;
+        }
+        .side-bar{
+            flex-grow: 1;
+            width: 30%;
+            height: 30vh;
+            background-color: greenyellow;
+        }
+        footer{
+            width: 100%;
+            height: 15vh;
+            background-color: red;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main"><p>고정 그리드 레이아웃</p></div>
+    <div class="content">
+        <div class="main-title"><p>본문</p></div>
+        <div class="side-bar"><p>사이드바</p></div>
+    </div>
+    <footer>
+        푸터
+    </footer>
+</body>
+</html>

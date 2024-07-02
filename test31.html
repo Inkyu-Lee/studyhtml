@@ -5,11 +5,11 @@
             margin: 0px auto;
             padding: 0px auto;
             max-width: 967px;
-            max-height: 1500px;
+            max-height: 2500px;
         }
         .main{
             width: 100%;
-            height: 283px;
+            height: 27vh;
             background-image: url(assets/image/dog/bg.png);
             background-repeat: no-repeat;
         }
@@ -20,7 +20,7 @@
         }
         .main-menu{
             width: 100%;
-            height: 65px;
+            height: 6.5vh;
             background-color: green;
         }
         .main-menu li{
@@ -59,11 +59,11 @@
         }
         footer{
             width: 100%;
-            height: 100px;
+            height: 10vh;
             background-color: black;
             color: white;
             text-align: center;
-            line-height: 55px;
+            line-height: 5.5vh;
         }
 
         body{
@@ -71,6 +71,42 @@
             background: linear-gradient(to bottom, skyblue, white 50%);
         }
 
+        @media (max-width: 768px){
+            .main{
+                height: 15vh;
+                background-image: unset;
+                background-color: black;
+            }
+            body{
+                background: unset;
+            }
+            .main-content{
+                width: 100%;
+            }
+            .main-menu{
+                display: block;
+                height: 27.0vh;
+                background-color: unset;
+            }
+            .main-menu li{
+                display: block;
+                width: 90%;
+                height: 4vh;
+                border: 1px solid black;
+                line-height: 4vh;
+                border-radius: 15px 15px 15px 15px;
+                color: blue;
+            }
+            .side-bar{
+                background-color: unset;
+                display: block;
+                width: 70%;
+                height: 64vh;
+            }
+            footer{
+            }
+        }
+/* 
         @media (max-width: 768px){
             *{
                 max-width: 768px;
@@ -108,7 +144,7 @@
             *{
                 font-size: 0.8rem;
             }
-        }
+        } */
     </style>
 <head>
     <meta charset="UTF-8">
